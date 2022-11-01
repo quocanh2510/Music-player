@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="icon" href="https://i.pinimg.com/originals/ae/2e/56/ae2e5651b74a00d5d31b8c6453fa3ebb.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <div class="music-app">
+      <div class="sidebar hide-on-mobile-tablet">
+        <button class="close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="logo">
+          <img src="https://zmp3-static.zadn.vn/skins/zmp3-v6.1/images/backgrounds/logo-dark.svg" alt="" class="logo-img">
+        </div>
+        <ul class="sidebar-list">
+          <li class="sidebar-item active">
+            <i class="fa-solid fa-face-smile"></i>
+            Cá nhân
+          </li>
+          <li class="sidebar-item">
+            <i class="fa-solid fa-circle-play"></i>
+            Khám phá
+          </li>
+          <li class="sidebar-item">
+            <i class="fa-solid fa-chart-simple"></i>
+            #Zing chart
+          </li>
+          <li class="sidebar-item">
+            <i class="fa-solid fa-headphones"></i>
+            Radio & Postcard
+            <div class="notify">LIVE</div>
+          </li>
+          <li class="sidebar-item">
+            <i class="fa-solid fa-user"></i>
+            Theo dõi
+          </li>
+        </ul>
+        <ul class="sidebar-list">
+          <li class="sidebar-item">
+            <i class="fa-solid fa-music"></i>
+            Nhạc mới
+          </li>
+          <li class="sidebar-item">
+            <i class="fa-solid fa-icons"></i>
+            Thể loại
+          </li>
+          <li class="sidebar-item">
+            <i class="fa-solid fa-chart-simple"></i>
+            Top 100
+          </li>
+          <li class="sidebar-item">
+            <i class="fa-solid fa-video"></i>
+            MV
+          </li>
+          <li class="banner">
+            <span class="content">Nghe nhạc không quảng cáo cùng kho nhạc VIP</span>
+            <button>MUA VIP</button>
+          </li>
+        </ul>
+        <ul class="sidebar-list">
+          <li class="sidebar-item title disable">THƯ VIỆN</li>
+          <li class="sidebar-item">
+            <i class="fa-solid fa-face-smile"></i>
+            Bài hát
+          </li>
+          <li class="sidebar-item">
+            <i class="fa-solid fa-circle-play"></i>
+            Playlist
+          </li>
+          <li class="sidebar-item">
+            <i class="fa-solid fa-chart-simple"></i>
+            Gần đây
+          </li>
+        </ul>
+      </div>
+      <div class="player">
+          <!-- Dashboard -->
+          <div class="dashboard">
+            <div class="menu">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- Header -->
+            <header>
+              <h4>Now playing:</h4>
+              <h2></h2>
+            </header>
+            <!-- CD -->
+            <div class="cd">
+              <div class="cd-thumb">
+              </div>
+            </div>
+            <!-- Control -->
+            <div class="control">
+              <div class="btn btn-repeat">
+                <i class="fas fa-redo"></i>
+              </div>
+              <div class="btn btn-prev">
+                <i class="fas fa-step-backward"></i>
+              </div>
+              <div class="btn btn-toggle-play">
+                <i class="fas fa-pause icon-pause"></i>
+                <i class="fas fa-play icon-play"></i>
+              </div>
+              <div class="btn btn-next">
+                <i class="fas fa-step-forward"></i>
+              </div>
+              <div class="btn btn-random">
+                <i class="fas fa-random"></i>
+              </div>
+            </div>
+            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+            <audio id="audio" src=""></audio>
+          </div>
+          <!-- Playlist -->
+          <div class="playlist"></div>
+      </div>
+    </div>
+</body>
+    <script src="./js/main.js"></script>
+</html>

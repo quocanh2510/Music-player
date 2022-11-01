@@ -1,0 +1,81 @@
+/* Mobile */
+@media (max-width: 46.1875em) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .sidebar {
+        width: 75%;
+    }
+    .control {
+        width: 100%;
+    }
+    .progress {
+        width: 100%;
+    }
+    .song {
+        width: 100%;
+    }
+}
+
+/* Mobile & Tablet */
+@media (max-width: 63.9375em) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+    .menu {
+        display: block;
+        position: absolute;
+        top: 16px;
+        left: 16px;
+    }
+    .menu:hover {
+        cursor: pointer;
+    }
+    .sidebar {
+        animation: leftToRight 0.5s ease;
+    }
+    .sidebar.open {
+        display: block;
+    }
+    .menu i {
+        color: #fff;
+        font-size: 20px;
+    }
+    .close {
+        visibility: visible;
+    }
+    .player {
+        position: relative;
+        margin: 0 auto;
+      }
+      
+      .dashboard {
+        padding: 16px 16px 14px;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        border-bottom: 1px solid #ebebeb;
+      }
+      header h2 {
+        color: #fff;
+        font-size: 20px;
+      }
+      
+      /* PLAYLIST */
+      .playlist {
+        margin-top: 387px;
+        padding: 12px;
+        margin-top: 374px;
+      }
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .hide-on-tablet {
+        display: none;
+    }
+    .sidebar {
+        width: 40%;
+    }
+}
