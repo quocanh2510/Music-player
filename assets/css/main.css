@@ -184,6 +184,7 @@ html *::-webkit-scrollbar-track {
   }
   
   .dashboard {
+    z-index: 100;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -281,14 +282,42 @@ html *::-webkit-scrollbar-track {
     appearance: none;
     height: 6px;
     outline: none;
-    -webkit-transition: 0.2s;
     transition: opacity 0.2s;
     border-radius: 4px;
     overflow: hidden;
-    cursor: pointer;
   }
+
+.volume {
+  width: 500px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.volume i {
+  color: #fff;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.volume i:hover {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.volume-progress {
+  height: 6px;
+  outline: none;
+  transition: opacity 0.2s;
+  border-radius: 4px;
+}
+
+.volume-progress::-webkit-slider-thumb {
+  cursor: pointer;
+}
   
-  .progress::-webkit-slider-thumb {
+.progress::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 12px;
@@ -296,14 +325,14 @@ html *::-webkit-scrollbar-track {
     background-color: var(--primary-color);
     border-radius: 2px;
     cursor: pointer;
-  }
+}
   
   /* PLAYLIST */
   .playlist {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 379px;
+    margin-top: 407px;
     padding: 12px 0;
     background-image: url('https://minh1202.github.io/MP3/assets/images/zma-header-bot.png');
     background-position: center;
@@ -315,16 +344,21 @@ html *::-webkit-scrollbar-track {
     align-items: center;
     width: 522px;
     margin-bottom: 12px;
-    background-color: #fff;
+    box-shadow: 2px 2px 2px #ccc;
+    background: rgba(110, 110, 110, 0.25);
+    backdrop-filter: blur(2px);
+    --webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(225, 225, 225, 0.18);
     padding: 2px 16px;
     border-radius: 50px;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
   }
 
   .song:hover {
     cursor: pointer;
-    background-color: var(--primary-color);
+    background: rgba(110, 110, 110, 0.4);
+    box-shadow: 2px 2px 10px #ccc;
+    transform: translate3d(0, -2px, 100px)
   }
 
   .song:hover .title, .song:hover .author, .song:hover .option {
@@ -332,11 +366,11 @@ html *::-webkit-scrollbar-track {
   }
   
   .song.active {
-    background-color: var(--primary-color);
-  }
-  
-  .song:active {
-    opacity: 0.8;
+    background: rgba(230, 32, 32, 0.6);
+    backdrop-filter: blur(10px);
+    --webkit-backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 10px #ccc;
+    transform: translate3d(0, -2px, 100px)
   }
   
   .song.active .option,
@@ -360,7 +394,7 @@ html *::-webkit-scrollbar-track {
   
   .song .title {
     font-size: 16px;
-    color: var(--text-color);
+    color: #ccc;
     margin-bottom: 2px;
   }
   
@@ -374,6 +408,10 @@ html *::-webkit-scrollbar-track {
     color: #999;
     font-size: 18px;
   }
+
+.hide {
+  display: none;
+}
 
 @keyframes leftToRight {
   from {

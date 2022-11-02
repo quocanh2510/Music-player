@@ -12,6 +12,9 @@
     .progress {
         width: 100%;
     }
+    .volume {
+        width: 100%;
+    }
     .song {
         width: 100%;
     }
@@ -64,9 +67,8 @@
       
       /* PLAYLIST */
       .playlist {
-        margin-top: 387px;
+        margin-top: 402px;
         padding: 12px;
-        margin-top: 374px;
       }
 }
 

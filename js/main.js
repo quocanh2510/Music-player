@@ -17,6 +17,9 @@ const prevBtn = $('.btn-prev')
 const nextBtn = $('.btn-next')
 const random = $('.btn-random')
 const repeat = $('.btn-repeat')
+const mute = $('.mute')
+const volumeHigh = $('.volume-high')
+const volume = $('.volume-progress')
 
 const app = {
     currentIndex: 0,
@@ -272,6 +275,46 @@ const app = {
                 }
             }
         }
+
+        //Open Sidebar
+        menu.onclick = () => {
+            sidebar.classList.add('open')
+        }
+
+        //Close Sidebar
+        close.onclick = () => {
+            sidebar.classList.remove('open')
+        }
+
+        //Tăng giảm ăm lượng
+        volume.onchange = () => {
+            audio.volume = volume.value/100
+            if (audio.volume === 0) {
+                mute.classList.remove('hide')
+                volumeHigh.classList.add('hide')
+            } else {
+                volumeHigh.classList.remove('hide')
+                mute.classList.add('hide')
+            }
+        }
+
+        //Xử lý khi click vào volume icon
+
+        //1. Khi click vào volume high
+        volumeHigh.onclick = () => {
+            audio.volume = 0
+            volume.value = 0
+            mute.classList.remove('hide')
+            volumeHigh.classList.add('hide')
+        }
+
+        //2. Khi click vào mute
+        mute.onclick = () => {
+            audio.volume = 1
+            volume.value = 100
+            volumeHigh.classList.remove('hide')
+            mute.classList.add('hide')
+        }
     },
     getCurrentSong: function() {
         return this.songs[this.currentIndex]
@@ -329,13 +372,3 @@ const app = {
 }
 
 app.start()
-
-//Open Sidebar
-menu.onclick = () => {
-    sidebar.classList.add('open')
-}
-
-//Close Sidebar
-close.onclick = () => {
-    sidebar.classList.remove('open')
-}
