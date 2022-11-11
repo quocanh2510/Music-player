@@ -25,6 +25,18 @@ const app = {
     currentIndex: 0,
     songs: [
         {
+            name: 'When i get old',
+            singer: 'Christopher ft Chung Ha',
+            path: './assets/music/Christopher_Chung_Ha_When_I_Get_Old.mp3',
+            image: 'https://avatar-ex-swe.nixcdn.com/song/2022/10/20/2/4/1/e/1666255166384_640.jpg'
+        },
+        {
+            name: 'Know me too well',
+            singer: 'New Hope Club ft Danna Paola',
+            path: './assets/music/New Hope Club Danna Paola Know Me Too Well.mp3',
+            image: 'https://data.chiasenhac.com/data/cover/117/116022.jpg'
+        },
+        {
             name: 'Muộn rồi mà sao còn',
             singer: 'Sơn Tùng MTP',
             path: './assets/music/MuonRoiMaSaoCon-SonTungMTP-7011803.mp3',
