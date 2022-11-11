@@ -366,11 +366,11 @@ html *::-webkit-scrollbar-track {
   }
   
   .song.active {
-    background: rgba(230, 32, 32, 0.6);
     backdrop-filter: blur(10px);
     --webkit-backdrop-filter: blur(10px);
     box-shadow: 2px 2px 10px #ccc;
-    transform: translate3d(0, -2px, 100px)
+    transform: translate3d(0, -2px, 100px);
+    animation: skeleton 3s linear infinite alternate;
   }
   
   .song.active .option,
@@ -432,5 +432,17 @@ html *::-webkit-scrollbar-track {
   to {
     transform: translateX(-300px);
     opacity: 0;
+  }
+}
+
+@keyframes skeleton {
+  0% {
+    background-color: var(--primary-color);
+  }
+  50% {
+    background-color: rgba(230, 32, 32, 0.5);
+  }
+  100% {
+    background-color: rgba(230, 32, 32, 0.1);
   }
 }
