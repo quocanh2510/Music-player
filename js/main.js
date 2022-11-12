@@ -25,109 +25,109 @@ const app = {
     currentIndex: 0,
     songs: [
         {
-            name: 'When i get old',
+            name: 'When I Get Old',
             singer: 'Christopher ft Chung Ha',
             path: './assets/music/Christopher_Chung_Ha_When_I_Get_Old.mp3',
             image: 'https://avatar-ex-swe.nixcdn.com/song/2022/10/20/2/4/1/e/1666255166384_640.jpg'
         },
         {
-            name: 'Know me too well',
+            name: 'Know Me Too Well',
             singer: 'New Hope Club ft Danna Paola',
             path: './assets/music/New Hope Club Danna Paola Know Me Too Well.mp3',
             image: 'https://data.chiasenhac.com/data/cover/117/116022.jpg'
         },
         {
-            name: 'Muộn rồi mà sao còn',
+            name: 'Muộn Rồi Mà Sao Còn',
             singer: 'Sơn Tùng MTP',
             path: './assets/music/MuonRoiMaSaoCon-SonTungMTP-7011803.mp3',
             image: './assets/img/muon-roi-ma-sao-con.jpg'
         },
         {
-            name: 'Ai biết',
+            name: 'Ai Biết',
             singer: 'WEAN',
             path: './assets/music/AiBiet-WEAN-6061846.mp3',
             image: 'https://avatar-ex-swe.nixcdn.com/song/2019/09/03/9/8/e/f/1567498868420_640.jpg'
         },
         {
-            name: 'Buồn không thể buông',
+            name: 'Buồn Không Thể Buông',
             singer: 'Trung Quân Idol',
             path: './assets/music/BuonKhongTheBuong-TrungQuanIdol.mp3',
             image: 'https://images.genius.com/234e068aca509ec5c43c435cf10d9928.600x600x1.jpg'
         },
         {
-            name: 'Chạy khỏi thế giới này',
+            name: 'Chạy Khỏi Thế Giới Này',
             singer: 'Dalab ft Phương Ly',
             path: './assets/music/ChayKhoiTheGioiNay-DaLABPhuongLy.mp3',
             image: 'https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/5/b/9/6/5b96fdda0362a6b85fe54c4ce1d58e0b.jpg'
         },
         {
-            name: 'Chìm sâu',
+            name: 'Chìm Sâu',
             singer: 'MCK ft Trung Trần',
             path: './assets/music/ChimSau-MCKTrungTran.mp3',
             image: 'https://i1.sndcdn.com/artworks-XWhy73hN7XntEFlJ-rBzgxg-t500x500.jpg'
         },
         {
-            name: 'Chưa quên người yêu cũ',
+            name: 'Chưa Quên Người Yêu Cũ',
             singer: 'Hà Nhi',
             path: './assets/music/ChuaQuenNguoiYeuCu-HaNhi.mp3',
             image: 'https://i.scdn.co/image/ab67616d0000b2735724414710cbb0b7623a977c'
         },
         {
-            name: 'Chúng ta của hiện tại',
+            name: 'Chúng Ta Của Hiện Tại',
             singer: 'Sơn Tùng MTP',
             path: './assets/music/ChungTaCuaHienTaiCM1XLofiVersion-SonTungMTPCM1X.mp3',
             image: 'https://i.scdn.co/image/ab67616d0000b2735888c34015bebbf123957f6d'
         },
         {
-            name: 'Chuyện đôi ta',
+            name: 'Chuyện Đôi Ta',
             singer: 'Dalab ft EmceeL',
             path: './assets/music/ChuyenDoiTa-EmceeLDaLAB.mp3',
             image: 'https://i.scdn.co/image/ab67616d0000b273a400211178f6d590d875f2da'
         },
         {
-            name: 'Em là',
+            name: 'Em Là',
             singer: 'MONO',
             path: './assets/music/EmLa-MONOOnionn.mp3',
             image: 'https://pic-bstarstatic.akamaized.net/ugc/5ba6a14bd3c1a2d0544bf23e7e8b706a.jpg'
         },
         {
-            name: 'Năm ngoái giờ này',
+            name: 'Năm Ngoái Giờ Này',
             singer: 'Phùng Khánh Linh',
             path: './assets/music/NamNgoaiGioNay-PhungKhanhLinh.mp3',
             image: 'https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/7/b/d/e/7bde9ab0c8434e2e3328763e4df5bac3.jpg'
         },
         {
-            name: 'Và ngày nào đó',
+            name: 'Và Ngày Nào Đó',
             singer: 'Trung Quân Idol',
             path: './assets/music/VaNgayNaoDo-TrungQuanIdol.mp3',
             image: 'https://i.scdn.co/image/ab67616d0000b2736ef594a7c0c68fdc1c0c0a51'
         },
         {
-            name: 'Waiting for you',
+            name: 'Waiting For You',
             singer: 'MONO',
             path: './assets/music/WaitingForYou-MONOOnionn.mp3',
             image: 'https://kenh14cdn.com/thumb_w/660/203336854389633024/2022/10/22/photo-3-1666438627327149130496.jpg'
         },
         {
-            name: 'Anh biết',
+            name: 'Anh Biết',
             singer: 'Xám',
             path: './assets/music/anhbiet-xam.mp3',
             image: './assets/img/anhbiet.jpg'
         },
         {
-            name: 'Anh muốn nghe giọng em',
+            name: 'Anh Muốn Nghe Giọng Em',
             singer: 'Nguyễn LYM',
             path: './assets/music/AnhMuonNgheGiongEm-NguyenLYMSeth-5362309.mp3',
             image: './assets/img/chill.jpg'
         },
         {
-            name: 'Có hạt sương trên mắt em',
+            name: 'Có Hạt Sương Trên Mắt Em',
             singer: 'Dick',
             path: './assets/music/CoHatSuongTrenMatEm-Dick-5730852.mp3',
             image: './assets/img/chill2.jpg'
         },
         {
-            name: 'Được không anh Lofi Version',
+            name: 'Được Không Anh Lofi Version',
             singer: 'Trang',
             path: './assets/music/DuocKhongAnhLofiVersion-TrangThienMagazineTempoG-6177053.mp3',
             image: 'https://images.genius.com/fe9107958e782c1db95f1420c72c65d0.1000x563x1.jpg'
@@ -280,11 +280,6 @@ const app = {
                     app.render()
                     audio.play()
                 }
-
-                //Xử lý khi click vào song option
-                if(e.target.closest('.option')) {
-
-                }
             }
         }
 
@@ -335,6 +330,7 @@ const app = {
         heading.textContent = this.currentSong.name
         cdThumb.style.backgroundImage = `url('${this.currentSong.image}')`
         audio.src = this.currentSong.path
+        document.title = `${this.currentSong.name} - ${this.currentSong.singer}`
     },
     nextSong: function() {
         this.currentIndex++
