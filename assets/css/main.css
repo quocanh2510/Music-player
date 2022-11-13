@@ -117,6 +117,7 @@ html *::-webkit-scrollbar-track {
   .sidebar-item.active {
     background-color: hsla(0,0%,100%,.1);
     border-left: 3px solid var(--primary-color);
+    color: #fff;
   }
 
   .sidebar-item i {
